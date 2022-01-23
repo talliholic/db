@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+  </head>
+  <body>
+    <form action="/users" method="POST">
+      <input type="text" name="name" placeholder="name" />
+      <input type="email" name="email" placeholder="email" />
+      <input type="password" name="password" placeholder="password" />
+      <input type="submit" value="Sign up" />
+    </form>
+    <form action="/users/login" method="POST">
+      <input type="email" name="email" placeholder="email" />
+      <input type="password" name="password" placeholder="password" />
+      <input type="submit" value="Login" />
+    </form>
+    <h1>Create Task</h1>
+    <form action="/tasks" method="POST">
+      <input type="text" name="description" placeholder="Describe your task" />
+      <input type="submit" value="Send" />
+    </form>
+    <form action="/users/logout" method="POST">
+      <input type="submit" value="logout" />
+    </form>
+  </body>
+  <script>
+    // const data = {
+    //   name: "Iván Andrés Pérez Valencia",
+    //   email: "talliholic@gmail.com",
+    //   password: "Kay20071",
+    // };
+    // const options = {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify(data),
+    // };
+    // fetch("/users", options);
+  </script>
+</html>
